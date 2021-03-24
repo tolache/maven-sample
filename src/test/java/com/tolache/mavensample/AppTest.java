@@ -1,4 +1,4 @@
-package com.mycompany.mavensample;
+package com.tolache.mavensample;
 
 import static org.junit.Assert.assertTrue;
 
