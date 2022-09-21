@@ -74,14 +74,14 @@
           <groupId>org.codehaus.mojo</groupId>
           <executions>
             <execution>
-              <id>Greet</id>
+              <id>echo-value</id>
               <phase>package</phase>
               <goals>
                 <goal>exec</goal>
               </goals>
               <configuration>
                 <executable>echo.exe</executable>
-                <commandlineArgs>hello</commandlineArgs>
+                <commandlineArgs>${tola.test.param}</commandlineArgs>
               </configuration>
             </execution>
           </executions>
