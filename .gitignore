@@ -1,4 +1,5 @@
 target
+pom.xml.versionsBackup
 
 # Compiled class file
 *.class
