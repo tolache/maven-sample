@@ -11,6 +11,12 @@ public class App
 {
     public static void main( String[] args )
     {
+        testTmpDir();
+        String version = App.class.getPackage().getImplementationVersion();
+        System.out.println("Version is: " + version);
+    }
+
+    private static void testTmpDir() {
         String defaultBaseDir = System.getProperty("java.io.tmpdir");
         System.out.println("tmpdir is: " + defaultBaseDir);
         try {
