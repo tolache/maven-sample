@@ -11,4 +11,12 @@
     <activeProfiles>
         <activeProfile>tola-test</activeProfile>
     </activeProfiles>
+
+    <servers>
+        <server>
+            <id>MyMavenRepo</id>
+            <username>${env.AZURE_DEVOPS_USERNAME}</username>
+            <password>${env.AZURE_DEVOPS_TOKEN}</password>
+        </server>
+    </servers>
 </settings>
