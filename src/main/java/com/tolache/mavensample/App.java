@@ -3,10 +3,6 @@ package com.tolache.mavensample;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * Hello world!
- *
- */
 public class App
 {
     public static void main( String[] args )
@@ -14,6 +10,7 @@ public class App
         testTmpDir();
         String version = App.class.getPackage().getImplementationVersion();
         System.out.println("Version is: " + version);
+        System.out.println(HeapChecker.showHeapInfo());
     }
 
     private static void testTmpDir() {
