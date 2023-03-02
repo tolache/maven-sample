@@ -23,13 +23,19 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>org.jacoco.agent</artifactId>
       <version>0.8.8</version>
       <scope>test</scope>
     </dependency>
-
+    <dependency>
+      <groupId>org.jacoco</groupId>
+      <artifactId>org.jacoco.agent</artifactId>
+      <classifier>runtime</classifier>
+      <version>0.8.8</version>
+    </dependency>
   </dependencies>
 
   <repositories>
@@ -80,7 +86,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
           <configuration>
-            <argLine>-javaagent:${settings.localRepository}/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8.jar=destfile=${project.build.directory}/jacoco.exec</argLine>
+            <argLine>-javaagent:${settings.localRepository}/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=${project.build.directory}/jacoco.exec</argLine>
           </configuration>
         </plugin>
         <plugin>
