@@ -17,4 +17,11 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    @Test
+    public void shouldFailRandomly() {
+        boolean randomResult = Math.random() < 0.5;
+
+        assertTrue(randomResult);
+    }
 }
